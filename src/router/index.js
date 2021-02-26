@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Coin from '../views/Coin.vue'
+import PodcastEpisode from '../components/PodcastEpisode.vue'
 import NotFound from '../views/NotFound.vue'
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     path: '/coin/:coinId',
     name: 'Coin',
     component: Coin
+  },
+  {
+    path: '/podcast/episode=:episodeName',
+    name: 'PodcastEpisode',
+    component: PodcastEpisode
   },
   {
     path: '/404', 
