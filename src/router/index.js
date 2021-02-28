@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Coin from '../views/Coin.vue'
 import PodcastEpisode from '../components/PodcastEpisode.vue'
+import EpisodeList from '../components/EpisodeList.vue'
 import NotFound from '../views/NotFound.vue'
 
 const routes = [
@@ -21,9 +22,14 @@ const routes = [
     component: Coin
   },
   {
-    path: '/podcast/episode=:episodeName',
+    path: '/podcast/:episodeName',
     name: 'PodcastEpisode',
     component: PodcastEpisode
+  },
+  {
+    path: '/podcast/episodelist',
+    name: 'EpisodeList',
+    component: EpisodeList
   },
   {
     path: '/404', 
