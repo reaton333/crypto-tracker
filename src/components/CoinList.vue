@@ -96,7 +96,6 @@ export default {
     this.currentPage = this.$route.params.pageNumber;
     // console.log(this.currentPage);
     this.getCoinsList(this.pageSize, this.currentPage);
-    // this.sortedCoins();
     // console.log(this.sortedCoins);
   },
   methods: {

@@ -1,7 +1,4 @@
 <template>
-    <!-- {{ episodeData }} -->
-    <!-- <div class="card-header" :style="{ backgroundImage: 'url(' + episodeData.data['episode-image'].url + ')'}" style="object-fit: contain;">
-    </div> -->
     <img :src="episodeData.data['episode-image'].url" alt="">
     <div class="card-body">
         <h2>{{ episodeData.data['episode_title'][0].text }}</h2>
@@ -47,18 +44,13 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-/* .card_img {
-    width: 200px;
-    height: 300px;
-    object-fit: contain;
-} */
+
 .card-body {
   padding: 30px 20px;
   text-align: center;
   font-size: 18px;
   overflow: auto;
 }
-
 
 .card:hover {
   transform: scale(1.05);
@@ -75,7 +67,6 @@ img {
   padding: 10px 5px;
   cursor: pointer;
 }
-
 
 @media screen and (max-width: 1000px) {
   .card {
@@ -97,5 +88,4 @@ img {
     width: 80%;
   }
 }
-
 </style>
